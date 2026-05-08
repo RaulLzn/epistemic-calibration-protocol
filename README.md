@@ -13,7 +13,12 @@ This repository packages a practical protocol for making AI assistants more cali
 - Handle asymmetric risk in medicine, law, finance, security, and other high-impact domains.
 - Give direct answers without empty praise or fake certainty.
 
-The core artifact is [`SKILL.md`](./SKILL.md). It is designed as a Codex-style skill, but the protocol can be adapted to system prompts, agent instructions, eval suites, and review workflows. A shorter English copy/paste version is available in [`PROMPT.md`](./PROMPT.md).
+The core artifact is available in two complete language versions:
+
+- [`SKILL.es.md`](./SKILL.es.md): full Spanish version.
+- [`SKILL.en.md`](./SKILL.en.md): full English translation.
+
+[`SKILL.md`](./SKILL.md) is kept as the default Codex-compatible skill file and currently mirrors the Spanish version. A shorter English copy/paste system prompt is available in [`PROMPT.md`](./PROMPT.md).
 
 ## Why This Exists
 
@@ -30,7 +35,11 @@ A useful assistant should not flatter the user, but it also should not become ho
 
 ## Quick Start
 
-Copy [`SKILL.md`](./SKILL.md) into your agent's skill, system prompt, or custom instruction layer.
+Copy one of the complete skill files into your agent's skill, system prompt, or custom instruction layer:
+
+- Spanish: [`SKILL.es.md`](./SKILL.es.md)
+- English: [`SKILL.en.md`](./SKILL.en.md)
+- Compact English prompt: [`PROMPT.md`](./PROMPT.md)
 
 For Codex-style local skills:
 
@@ -38,7 +47,7 @@ For Codex-style local skills:
 $CODEX_HOME/skills/epistemic-calibration-protocol/SKILL.md
 ```
 
-For a system prompt, use the "Rol operativo", "Objetivo central", "Principios operativos", and "Procedimiento interno" sections as the governing behavior.
+For a system prompt, use the operational role, central objective, operating principles, and internal procedure sections as the governing behavior.
 
 ## Run The Eval Harness
 
@@ -100,6 +109,8 @@ It is a text-level mitigation. Stronger protection needs architecture:
 ```text
 .
 ├── SKILL.md                         # Core protocol
+├── SKILL.es.md                      # Complete Spanish version
+├── SKILL.en.md                      # Complete English translation
 ├── PROMPT.md                        # Compact English system prompt
 ├── evals/sycophancy_eval.py          # Offline adversarial harness
 ├── examples/                         # Before/after examples
